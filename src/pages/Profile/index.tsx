@@ -162,7 +162,6 @@ const Profile: React.FC = () => {
 				},
 			});
 
-			console.log(updatedProfile);
 			appDispatch(
 				authActions.logIn({
 					token,

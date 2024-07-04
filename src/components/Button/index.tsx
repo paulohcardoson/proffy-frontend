@@ -8,7 +8,7 @@ const Button: React.FC<PropsWithChildren<IProps>> = ({
 	onClick,
 }) => {
 	const handleClick = () => {
-		if (!loading || disabled || !onClick) return;
+		if (loading || disabled || !onClick) return;
 
 		onClick();
 	};
